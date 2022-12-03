@@ -20,7 +20,7 @@ mongoose.connect(process.env.MONGO_URL, {
 })
 
 app.use(bodyParser.json());    
-app.use("",RouteData)
+app.use("/",RouteData)
 
 app.listen(process.env.PORT, (req,res) => {
     console.log(`Server run at PORT ${process.env.PORT} or localhost:${process.env.PORT}`) 
